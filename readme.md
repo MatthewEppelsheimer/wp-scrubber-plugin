@@ -4,9 +4,9 @@ Schedule WordPress transients for deletion on action hooks.
 
 ## Install Scrubber
 
-This is a WordPress plugin. If you don't know how to take this package and install and use one, this probably isn't for you.
+This is a WordPress plugin. If you don't know how to take this package and install and use it, this probably isn't for you.
 
-The `Scrubber` class is segregated into its own file, so it's easy to incorporate directly into your own project. Not recommended because you'll miss out on any future development, but free is free. This class does 100% of the work except for calling `Scrubber::init()` on the `init` action, so you'll need to do that.
+The `Scrubber` class is segregated into its own file, so it's easy to incorporate directly into your own project. (Not recommended because you'll miss out on any future development, but hey. It's GPL, so do what you want.) The class does 100% of the work except for calling `Scrubber::init()` on the `init` action, so you'll need to do that.
 
 ## Using Scrubber — tl;dr
 
@@ -25,7 +25,7 @@ Scrubber::schedule_deletion(
 );
 ```
 
-## How to Use Scrubber
+## How to Use Scrubber — long version
 
 ```php
 <?php
@@ -134,7 +134,7 @@ if ( ! $my_query = WP_Query( $query_args ) ) {
 
 Scrubber is available for testing and feedback, but **this is only a proof of concept. It isn't ready for prime time yet**.  
 
-When I can attest to its stablity, performance, and security, I'll publish it to the [wordpress.org](https://wordpress.org/) plugin repository. 
+When I can attest to its stablity, performance, and security, I'll publish it to the [wordpress.org](https://wordpress.org/) plugin repository and [packagist](https://packagist.org/) (for Composer). 
 
 Immediate next steps for this:
 
